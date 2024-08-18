@@ -1,0 +1,407 @@
+/* css styling */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: #344D67;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav h2{
+  margin: 0 10px;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li{
+  margin: 15px;
+  display: flex;
+  align-self: flex-end;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover{
+  color: #F3ECB0;
+  font-weight: bold;
+}
+
+.slideshow{
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.img-slide button { 
+    height: 50px; 
+    width: 50px; 
+    text-align: center;
+    font-size: large; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    border: white 1px solid;
+    opacity: 0.5;  
+} 
+  
+.img-slide button:first-child { 
+    left: 10px; 
+  
+} 
+  
+.img-slide button:last-child { 
+    right: 10px; 
+  
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.introduce{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: EEF2E6;
+}
+
+.introduce p{text-align: center;}
+
+.recommend{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: EEF2E6;
+}
+
+.wrapper { 
+    width: 100%; 
+    position: relative; 
+  
+} 
+  
+.wrapper i { 
+    height: 50px; 
+    width: 50px; 
+    background: rgb(255, 255, 255); 
+    text-align: center; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    box-shadow: 2px 2px 5px #aaaaaa;
+
+} 
+  
+.wrapper i:first-child { 
+    left: -10px; 
+  
+} 
+  
+.wrapper i:last-child { 
+    right: -10px; 
+  
+} 
+  
+.wrapper .card-container { 
+    display: grid; 
+    grid-auto-flow: column; 
+    gap: 16px; 
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    scrollbar-width: 0;
+    padding: 20px; 
+} 
+  
+.card-container::-webkit-scrollbar { 
+    display: none; 
+} 
+  
+.card-container .card { 
+    height: 340px; 
+    list-style: none; 
+    background: #fff; 
+    border-radius: 8px; 
+    display: flex; 
+    width: 340px; 
+    padding-bottom: 15px; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    box-shadow: 5px 5px 5px #aaaaaa;
+} 
+
+.card .img img { 
+    height: 200px;
+    width: 300px;
+    object-fit: fill;
+    border-radius: 8px 8px 0 0;
+    margin-top: 20px;
+} 
+  
+.card h2 { 
+    font-weight: 500; 
+    font-size: 20px; 
+    margin: 20px 0 5px; 
+} 
+  
+.card span { 
+    color: #6a6d78; 
+    font-size: 14px; 
+}
+
+footer{
+  background-color: #344D67;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .content{
+  display: flex;
+  justify-content: space-around;
+}
+
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  padding: 20px;
+  width: 25%;
+}
+
+.address h2{
+  font-size: 24px;
+  margin: 10px 0px;
+  padding: 0;
+  text-align: left;
+}
+
+.address p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.sosmed{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.sosmed ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.sosmed h3{
+  font-size: 24px;
+  margin: 10px 0px;
+  padding: 0;
+}
+
+.sosmed a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sosmed a:hover{
+  color: #F3ECB0;
+  font-weight: bold;
+}
+
+.form-registration{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.form-registration h3{
+  font-size: 24px;
+  margin: 10px 0px;
+  padding: 0;
+}
+
+.form-registration p{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+
+}
+
+form {
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+table th{
+  color: #fff;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"], 
+select{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+input[type="submit"],
+input[type="reset"]{
+    background-color: #73A9AD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: #0056b3;
+}
+
+.foot-note{
+  background-color: #083C5A;
+  font-weight: bold;
+}
+ 
+@media screen and (max-width: 900px) { 
+    .wrapper .card-container { 
+        grid-auto-columns: calc((100% / 2) - 9px); 
+
+    } 
+} 
+  
+@media screen and (max-width: 600px) { 
+    .wrapper .card-container { 
+        grid-auto-columns: 100%; 
+  
+    } 
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav h2 {
+    margin: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .form-registration{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  table{
+    width: 100%;
+    display: flex;
+  }
+
+  table tr{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .address,
+  .sosmed,
+  .form-registration {
+    margin-bottom: 20px;
+  }
+
+  .foot-note{width: 100%;}
+}
